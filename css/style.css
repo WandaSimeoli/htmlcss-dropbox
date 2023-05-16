@@ -16,7 +16,7 @@ body {
 .flex {
     display: flex;
 }
-li {
+header li {
     display: inline-block;
 }
 .row-header-top {
@@ -48,6 +48,6 @@ li {
  justify-content: center;
 }
 .col2-big > .row-main {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
