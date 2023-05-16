@@ -40,3 +40,14 @@ li {
 .header-bottom-col2 > * {
     width: 100%;
 }
+.row-main {
+    flex-direction: column;
+}
+.main-col1 {
+ align-items: center;
+ justify-content: center;
+}
+.col2-big > .row-main {
+    padding-left: 20px;
+    padding-right: 20px;
+}
