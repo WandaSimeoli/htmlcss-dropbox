@@ -3,9 +3,37 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 
+   font-family: 'Open Sans', sans-serif;
+}
+.debug {
+    border: 1px dashed black; 
+    min-height: 50px;
 }
 .container {
-    max-width: ;
+    max-width: 1000px;
     margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+li {
+    display: inline-block;
+}
+.row-header-top {
+    justify-content: space-between;
+}
+.header-top-col1, .header-top-col2 {
+    width: calc(100% / 3);
+}
+.header-bottom {
+    background-color: #B4D0E7;
+}
+.row-header-bottom {
+    display: flex;
+}
+.header-bottom-col1 {
+    width: 40%;
+}
+.header-bottom-col2 {
+    width: 60%;
 }
