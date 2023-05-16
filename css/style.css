@@ -37,3 +37,6 @@ li {
 .header-bottom-col2 {
     width: 60%;
 }
+.header-bottom-col2 > * {
+    width: 100%;
+}
