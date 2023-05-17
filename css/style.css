@@ -1,5 +1,5 @@
 /* Reset  */
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -73,9 +73,25 @@ header li {
 .col1-main > * {
     width: 80%;
 }
-.row-card > * {
+.row-card {
+    flex-wrap: wrap;
+}
+.col-card {
     width: calc(100% / 3);
 }
 .card-img {
     width: 100%;
+}
+.blue {
+    background-color: #B4D0E7;
+}
+.container.debug.flex {
+    justify-content: space-between;
+}
+.row-faq {
+    justify-content: space-between;
+}
+footer {
+    background-color: black;
+    color: white;
 }
