@@ -25,6 +25,11 @@
 .header-top-col1, .header-top-col2 {
     width: calc(100% / 3);
 }
+header {
+    position: sticky; 
+    top:0;
+    background-color: white;
+}
 .logo {
     width: 80%;
    }   
@@ -36,6 +41,7 @@ header li {
 /* Header Bottom */
 .header-bottom {
     background-color: #B4D0E7;
+    margin-bottom: 50px;
 }
 .container2 {
     margin: 0 250px;
@@ -70,9 +76,6 @@ header li {
 .jumbotron {
     position: relative;
     top: 60px;
-}
-header {
-    margin-bottom: 100px;
 }
 /* Fine Header */
 /* Inizio Main */
@@ -192,8 +195,19 @@ button {
     font-size: 2em;
    margin: 30px 0;
 }
+.row-faq > * {
+    padding: 15px;
+    font-weight: bold;
+}
 .row-faq {
     justify-content: space-between;
+    margin: 20px 0;
+}
+.container > h2 {
+    margin: 15px 0; 
+}
+main {
+    margin-bottom: 50px;
 }
 footer {
     background-color: black;
@@ -201,4 +215,18 @@ footer {
 }
 .row-footer > * {
     width: calc(100% / 5);
+}
+.col > *{
+    padding: 10px 20px;
+}
+.col > h3 {
+    padding-bottom: 15px;
+}
+.special2 {
+    width: 10%;
+    margin-bottom: 10px;
+}
+.language {
+    padding: 20px;
+    color: gray;
 }
