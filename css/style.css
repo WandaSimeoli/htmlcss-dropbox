@@ -48,7 +48,7 @@ header li {
     margin-left: 20px;
     margin-right: 20px;
 }
-.col1-big, .col2-big, .col3-big {
+.row-big > * {
     width: calc((100% / 3) - 40px);
 }
 .row-big {
@@ -60,4 +60,22 @@ header li {
 }
 .col3-enterprise {
     width: 20%;
+}
+.row-main {
+    display: flex;
+}
+.col2-main {
+    width: 30%;
+}
+.col1-main {
+    width: 70%;
+}
+.col1-main > * {
+    width: 80%;
+}
+.row-card > * {
+    width: calc(100% / 3);
+}
+.card-img {
+    width: 100%;
 }
