@@ -6,10 +6,10 @@
    font-family: 'Open Sans', sans-serif;
 }
 /* General */
-.debug {
+/* .debug {
     border: 1px dashed black; 
     min-height: 50px;
-}
+} */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -17,6 +17,7 @@
 .flex {
     display: flex;
 }
+/* Header top */
 .row-header-top {
     justify-content: space-between;
     text-align: center;
@@ -32,6 +33,7 @@ header li {
     padding: 10px;
     align-items: center;
 }
+/* Header Bottom */
 .header-bottom {
     background-color: #B4D0E7;
 }
@@ -72,28 +74,73 @@ header li {
 header {
     margin-bottom: 100px;
 }
+/* Fine Header */
+/* Inizio Main */
+input {
+    margin: 20px 0; 
+    border: 2px solid #0061FF ;
+}
+.type, .col1-enterprise {
+    text-align: center;
+    border: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+.user, .business, .price, .mounth, .drive, .share, .link, .highlights, main li {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.special {
+    width: 25%;
+  margin: 20px;
+}
+.price {
+    font-weight: bold;
+}
+.mounth {
+    color: gray;
+}
+.highlights {
+    font-weight: bold;
+}
+main li {
+   list-style: none;
+}
 .col2-big {
     margin-left: 20px;
     margin-right: 20px;
 }
-.row-big > * {
+.row-big > *{
     width: calc((100% / 3) - 40px);
+    border: 1px solid lightgrey;
+    margin-bottom: 20px;
 }
 .row-big {
     margin: 0 -40px;
     justify-content: center;
 }
-.col2-enterprise {
-    width: 80%;
+.entity {
+    color: blue;
+    font-size: 1em;
+}
+.row-enterprise {
+    border: 1px solid gray;
+}
+.col2-enterprise > * {
+    padding: 15px 15px; 
+}
+.col3-enterprise > * {
+    margin-top: 10px;
+}
+ .col2-enterprise {
+    width: 70%;
 }
 .col3-enterprise {
-    width: 20%;
+    width: 30%;
 }
 .row-main {
-    display: flex;
-}
-.col2-main {
-    width: 30%;
+ margin-top: 20px;
+ margin-bottom: 30px;
 }
 .col1-main {
     width: 70%;
@@ -101,20 +148,49 @@ header {
 .col1-main > * {
     width: 80%;
 }
+.col2-main {
+    width: 30%;
+    padding: 10px;
+}
+button {
+    background-color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+.title {
+    font-size: 2em;
+}
 .row-card {
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
-.col-card {
-    width: calc(100% / 3);
+.col-card, .col2-card{
+    width: calc((100% / 3) - 40px);
+}
+.col2-card {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .card-img {
     width: 100%;
 }
+.title2 > * {
+    font-size: 2em;
+    width: 50%;
+    margin-bottom: 30px;
+} 
 .blue {
     background-color: #B4D0E7;
+    margin: 30px 0; 
 }
 .container.debug.flex {
     justify-content: space-between;
+    align-items: center;
+}
+.container.debug.flex h2 {
+    width: 50%;
+    font-size: 2em;
+   margin: 30px 0;
 }
 .row-faq {
     justify-content: space-between;
