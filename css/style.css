@@ -18,19 +18,19 @@
     display: flex;
 }
 /* Header top */
-.row-header-top {
-    justify-content: space-between;
-    text-align: center;
-}
-.header-top-col1, .header-top-col2 {
-    width: calc(100% / 3);
-}
 header {
     position: sticky; 
     top:0;
     background-color: white;
 }
-.logo {
+nav {
+    justify-content: space-between;
+    text-align: center;
+}
+.header-top-col {
+    width: calc(100% / 3);
+}
+header img {
     width: 80%;
    }   
 header a {
@@ -41,31 +41,7 @@ header li {
     padding: 10px;
     align-items: center;
 }
-/* Header Bottom */
-.header-bottom {
-    background-color: #B4D0E7;
-    margin-bottom: 50px;
-}
-.container2 {
-    margin: 0 250px;
-    text-align: center;
-}
-.row-header-bottom {
-   align-items:flex-start;
-}
-.header-bottom-col1{
-    width: 40%;
-}
-.header-bottom-col1 > *{
-    padding: 20px 15px; 
-}
-.header-bottom-col2 {
-    width: 60%;
-}
-.header-bottom-col2 > * {
-    width: 100%;
-}
-.lightblue {
+.button {
     background-color: #0061FF;
     padding: 10px 15px;
     color: white;
@@ -73,15 +49,42 @@ header li {
     font-size: 1em;
     margin-left: 10px;
 }
+/* Header Bottom */
+.header-bottom {
+    background-color: #B4D0E7;
+    margin-bottom: 50px;
+}
+h1 {
+    margin: 20px 250px;
+    text-align: center;
+}
+.header-bottom-col1{
+    width: 40%;
+}
+.header-bottom-col1 > *{
+    padding: 10px 15px; 
+}
+.header-bottom-col2 {
+    width: 60%;
+}
+.header-bottom-col2 > * {
+    width: 100%;
+}
 .fa-arrow-down {
     font-size: 2em;
+    margin-top: -10px;
 }
 .jumbotron {
     position: relative;
-    top: 60px;
+    top: 80px;
 }
 /* Fine Header */
 /* Inizio Main */
+main {
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+ /* Scelta del piano business */
 input {
     margin: 20px 0; 
     border: 2px solid #0061FF ;
@@ -91,7 +94,8 @@ input {
     border: 1px solid lightgray;
     padding-bottom: 10px;
 }
-.user, .business, .price, .mounth, .drive, .share, .link, .highlights, main li {
+/* Tre colonne */
+.utility, main li {
     padding-left: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -100,19 +104,19 @@ input {
     width: 25%;
   margin: 20px;
 }
-.price {
+.col-big div:nth-child(3) {
     font-weight: bold;
 }
-.mounth {
+.col-big div:nth-child(4) {
     color: gray;
 }
-.highlights {
+.col-big div:nth-child(11) {
     font-weight: bold;
 }
 main li {
    list-style: none;
 }
-.col2-big {
+.middle {
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -129,6 +133,7 @@ main li {
     color: blue;
     font-size: 1em;
 }
+/* Colonna Unica */
 .row-enterprise {
     border: 1px solid gray;
 }
@@ -144,6 +149,7 @@ main li {
 .col3-enterprise {
     width: 30%;
 }
+/* Sezione con info e img */
 .row-main {
  margin-top: 20px;
  margin-bottom: 30px;
@@ -158,11 +164,12 @@ main li {
     width: 30%;
     padding: 10px;
 }
-button {
+.white {
     background-color: white;
     padding: 10px 15px;
     margin-top: 10px;
 }
+/* Card */
 .title {
     font-size: 2em;
 }
@@ -170,24 +177,26 @@ button {
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
-.col-card, .col2-card{
+.col-card{
     width: calc((100% / 3) - 40px);
 }
-.col2-card {
+.margin {
     margin-left: 20px;
     margin-right: 20px;
 }
-.card-img {
+.col-card img {
     width: 100%;
 }
+/* Sezione con i link */
 .title2 > * {
     font-size: 2em;
     width: 50%;
     margin-bottom: 30px;
 } 
-.link2 {
+.link {
     margin-bottom: 80px;
 }
+/* Sezione Partnership */
 .sponsor {
     width: calc(100% / 3);
     height: calc(100vw / 3);
@@ -201,6 +210,7 @@ button {
     width: 50%;
     height: 50%;
 }
+/* Primi quattro partner */
 .left > .partner:first-child {
     background-color: #A2D39B;
     border: 15px solid #D1E9CD;
@@ -214,6 +224,14 @@ button {
 .left > .partner:nth-child(3) {
     background-color: #0093CE;
 }
+.central > img {
+    width: 60%;
+}
+/* Partner Centrale */
+.central > p:last-child {
+    padding-top: 20px;
+}
+/* Ultimi quattro partner */
 .right > .partner:first-child {
     background-color: #D5001F;
 }
@@ -226,15 +244,13 @@ button {
 .right > .partner:nth-child(3) {
     background-color:#0D2481;
 }
-.central > p:last-child {
-    padding-top: 20px;
-}
 .partner img:not(.central){
     width: 70%;
     filter: invert();
     padding-top: 80px;
     padding-left: 60px;
 }
+/* Sezione Prova gratuita con button */
 .blue {
     background-color: #B4D0E7;
     margin-bottom: 50px;
@@ -248,6 +264,7 @@ button {
     font-size: 2em;
    margin: 30px 0;
 }
+/* Sezione Faq */
 .row-faq > * {
     padding: 15px;
     font-weight: bold;
@@ -259,9 +276,7 @@ button {
 .container > h2 {
     margin: 15px 0; 
 }
-main {
-    margin-bottom: 50px;
-}
+/* Inizio del Footer */
 footer {
     background-color: black;
     color: white;
