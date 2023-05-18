@@ -6,10 +6,10 @@
    font-family: 'Open Sans', sans-serif;
 }
 /* General */
-/* .debug {
+.debug {
     border: 1px dashed black; 
     min-height: 50px;
-} */
+}
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -33,6 +33,9 @@ header {
 .logo {
     width: 80%;
    }   
+header a {
+    text-decoration: none;
+}
 header li {
     display: inline-block;
     padding: 10px;
@@ -182,6 +185,18 @@ button {
     width: 50%;
     margin-bottom: 30px;
 } 
+.sponsor {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+    flex-wrap: wrap;
+}
+.central {
+    background-color: #F5F5F5;
+}
+.partner {
+    width: 50%;
+    height: 50%;
+}
 .blue {
     background-color: #B4D0E7;
     margin: 30px 0; 
