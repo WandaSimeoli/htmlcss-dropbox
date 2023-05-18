@@ -6,10 +6,10 @@
    font-family: 'Open Sans', sans-serif;
 }
 /* General */
-.debug {
+/* .debug {
     border: 1px dashed black; 
     min-height: 50px;
-}
+} */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -185,6 +185,9 @@ button {
     width: 50%;
     margin-bottom: 30px;
 } 
+.link2 {
+    margin-bottom: 80px;
+}
 .sponsor {
     width: calc(100% / 3);
     height: calc(100vw / 3);
@@ -192,14 +195,49 @@ button {
 }
 .central {
     background-color: #F5F5F5;
+    padding: 30px;
 }
 .partner {
     width: 50%;
     height: 50%;
 }
+.left > .partner:first-child {
+    background-color: #A2D39B;
+    border: 15px solid #D1E9CD;
+}
+.left > .partner:last-child {
+    background-color: #FF1C1C;
+}
+.left > .partner:nth-child(2) {
+    background-color: #61082B;
+}
+.left > .partner:nth-child(3) {
+    background-color: #0093CE;
+}
+.right > .partner:first-child {
+    background-color: #D5001F;
+}
+.right > .partner:last-child {
+    background-color: #FFD830;
+}
+.right > .partner:nth-child(2) {
+    background-color:#B4D0E7;
+}
+.right > .partner:nth-child(3) {
+    background-color:#0D2481;
+}
+.central > p:last-child {
+    padding-top: 20px;
+}
+.partner img:not(.central){
+    width: 70%;
+    filter: invert();
+    padding-top: 80px;
+    padding-left: 60px;
+}
 .blue {
     background-color: #B4D0E7;
-    margin: 30px 0; 
+    margin-bottom: 50px;
 }
 .container.debug.flex {
     justify-content: space-between;
